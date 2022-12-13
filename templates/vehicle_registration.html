@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+    <title> Vehicle Registration </title>
+</head>
+
+<body>
+    <div class="As_img">
+        <img src="{{ url_for('static', filename='image/AshokSthambh.png') }}" alt="logo">
+    </div>
+    <header>
+        <p>GOVERNMENT OF MADHYA PRADESH</p>
+        <h2>MINISTRY OF ROAD TRANSPORT & HIGHWAYS</h2>
+    </header>
+
+
+    <!--Navigation bar-->
+
+    <div class="nav_bar">
+        <nav>
+            <ol>
+                <a href="{{ url_for('About_us') }}" target="_blank">About Us</a>
+                <a href="{{ url_for('Home') }}" target="_blank">Home</a>
+                <a href="{{ url_for('Licence') }}" target="_blank">Licence</a>
+                <a href="{{ url_for('vehicle_reg') }}" target="_blank">Vehicle</a>
+                <a href="{{ url_for('login')}}" target="_blank">Admin</a>
+                <a href="{{ url_for('Contect') }}"target="_blank">Contact Us</a>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container my-3">
+        <h2> Vehicle Registration Form</h2>
+        <form action="/vehicle" enctype="multipart/form-data" method="POST">
+            <div class="mb-2">
+                <label for="Owner" class="form-label">Name of the owner</label>
+                <input type="text" class="form-control" name="Owner" id="owner">
+                <label for="Owner Age" class="form-label">Age of owner</label>
+                <input type="text" class="form-control" name="Owner Age" id="owner_age">
+                <label for="Vehicle type" class="form-label">Type of vehicle</label>
+                <input type="text" class="form-control" name="Vehicle type" id="vehicle_type">
+            </div>
+            <div class="mb-2">
+                <label for="Motor vehicle">Motor vehicle is : </label>
+                <label for="New">new vehicle</label>
+                <input type="radio" name="Motor vehicle" id="new">
+                <label for="Ex_army">Ex-army vehicle.</label>
+                <input type="radio" name="Motor vehicle" id="ex_army">
+                <label for="Imported">imported vehicle</label>
+                <input type="radio" name="Motor vehicle" id="imported">
+            </div>
+            <div class="mb-2">
+                <label for="Maker" class="form-label">Maker's name</label>
+                <input type="text" class="form-control" name="Maker" id="maker">
+                <label for="Year" class="form-label">year of manufacturer</label>
+                <input type="text" class="form-control" name="Year" id="year">
+                <label for="number of cylinders" class="form-label">Number of cylinders</label>
+                <input type="text" class="form-control" name="number of cylinders" id="cylin">
+                <label for="Seating" class="form-label">Seating capacity</label>
+                <input type="text" class="form-control" name="Seating" id="seating">
+                <label for="Energy" class="form-label">Horse power</label>
+                <input type="text" class="form-control" name="Energy" id="Energy">
+                <label for="Fuel" class="form-label">Fuel used in the engine</label>
+                <input type="text" class="form-control" name="Fuel" id="fuel">
+                <label for="Colour" class="form-label">colour of body</label>
+                <input type="text" class="form-control" name="Colour" id="colour">
+                <label for="Registration number" class="form-label">previous registration and registered number (if any)</label>
+                <input type="text" class="form-control" name="Registration number" id="reg_number">
+                <label for="weight by manufacturer" class="form-label">vehicle weight as certified by the manufacture</label>
+                <input type="text" class="form-control" name="weight by manufacturer" id="weight_by_manufacturer">
+                <label for="weight to registered" class="form-label">vehicle weight to be registered</label>
+                <input type="text" class="form-control" name="weight to registered" id="weight_to_registered">
+            </div>
+            <div class="mb-2">
+                <label for="Car image" class="form-label">Image of vehicle : </label>
+                <input type="file" name="Car image" />
+            </div>
+            <button type="submit" class="btn btn-dark">submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

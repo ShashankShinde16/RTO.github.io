@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contect.css') }}">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="As_img">
+        <img src="{{ url_for('static', filename='image/AshokSthambh.png') }}" alt="logo">
+    </div>
+    <header>
+        <p>GOVERNMENT OF MADHYA PRADESH</p>
+        <h2>MINISTRY OF ROAD TRANSPORT & HIGHWAYS</h2>
+    </header>
+
+
+    <!--Navigation bar-->
+
+    <div class="nav_bar">
+        <nav>
+            <ol>
+                <a href="{{ url_for('About_us') }}" target="_blank">About Us</a>
+                <a href="{{ url_for('Home') }}" target="_blank">Home</a>
+                <a href="{{ url_for('Licence') }}" target="_blank">Licence</a>
+                <a href="{{ url_for('vehicle_reg') }}" target="_blank">Vehicle</a>
+                <a href="{{ url_for('login')}}" target="_blank">Admin</a>
+                <a href="{{ url_for('Contect') }}"target="_blank">Contact Us</a>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Contect Us  -->
+    <div class="about">
+        <h4>Contect Us</h4>
+    </div>
+
+    <!--Floting Image section-->
+
+    <div class="image">
+        <img src="{{ url_for('static', filename='image/email.png') }}" alt="">
+    </div>
+
+    <!-- About contect  -->
+
+    <div class="Go">
+    <h6>Write Us: </h6>
+    <p>For any query regarding this website, please contact the Web Information Manager.:-</p>
+    </div>
+
+    <!-- Contect Information  -->
+
+    <div class="center">
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>Hariom Yadav</td>
+            </tr>
+            <tr>
+                <th>Designation:</th>
+                <td>Under Secretary (MVL)</td>
+            <tr>
+                <th>Email-id:</th>
+                <td>Hryadav777111@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table2">
+        <table>
+            <tr>
+                <th>For any Technical Problems related to:</th>
+                <th>Email-id</th>
+                <th>Contact Number</th>
+                <th>Timings</th>
+
+            </tr>
+            <tr>
+                <td>Vehicle registration, fitness, Tax, Permit, Fancy, Dealer etc</td>
+                <td>helpdesk-vahan@gov.in</td>
+                <td rowspan="4">+91 2075468543</td>
+                <td rowspan="4">Hryadav777111@gamil.in</td>
+
+            <tr>
+                <td>Learner License, Driving Licence etc</td>
+                <td>helpdesk-sarathi@gov.in</td>
+
+
+            </tr>
+            <tr>
+                <td>mParivahan Related</td>
+                <td>helpdesk-mparivahan@gov.in</td>
+
+
+            </tr>
+            <tr>
+                <td>eChallan Related</td>
+                <td>helpdesk-echallan@gov.in</td>
+
+            </tr>
+        </table>
+    </div>
+    <div class="blank">
+
+    </div>
+</body>
+
+</html>

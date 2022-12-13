@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/About.css') }}">
+</head>
+
+<body>
+    <!-- Header -->
+
+    
+    <div class="As_img">
+        <img src="{{ url_for('static', filename='image/AshokSthambh.png') }}" alt="logo">
+    </div>
+
+    <header>
+        <p>GOVERNMENT OF MADHYA PRADESH</p>
+        <h2>MINISTRY OF ROAD TRANSPORT & HIGHWAYS</h2>
+    </header>
+
+
+        <!--Navigation bar-->
+
+    <div class="nav_bar">
+        <nav>
+            <ol>
+                <a href="{{ url_for('About_us') }}" target="_blank">About Us</a>
+                <a href="{{ url_for('Home') }}" target="_blank">Home</a>
+                <a href="{{ url_for('Licence') }}" target="_blank">Licence</a>
+                <a href="{{ url_for('vehicle_reg') }}" target="_blank">Vehicle</a>
+                <a href="{{ url_for('login')}}" target="_blank">Admin</a>
+                <a href="{{ url_for('Contect') }}"target="_blank">Contact Us</a>
+            </ol>
+        </nav>
+    </div>
+
+        <div class="about">
+            <h4>About Us</h4>
+        </div>
+
+        <div class="infor">
+            <p>The Ministry of Road Transport & Highways (MoRTH) has been facilitating computerization of over 1300+
+                Road Transport Offices (RTOs) across the country. RTOs issue Registration Certificate (R.C.) & Driving
+                License (D.L.) that are mandatory requirements and are valid across the country, subject to certain
+                provisions and permissions.</p>
+
+            <p>
+                With wide variations in state policies and manual/ system based procedures being followed across the
+                country, it had become necessary to define same standards for these documents on a pan-India level to
+                ensure interoperability, correctness and timely availability of information. SCOSTA committee setup for
+                this purpose had recommended a uniform standardized software across the country. The Ministry thus
+                entrusted National Informatics Centre (N.I.C.) with the task of standardizing & deploying two softwares
+                - VAHAN for Vehicle Registration and SARATHI for Driving Licenses and of compiling the data with respect
+                to Vehicle Registration and Driving Licenses of all the states in State Register and National
+                Register.The applications VAHAN & SARATHI were conceptualized to capture the functionalities as mandated
+                by Central Motor Vehicle Act, 1988 as well as State motor vehicle Rules with customization in the core
+                product to suit the requirements of 36 States and UTs.
+            </p>
+
+            <h6>Our Vision</h6>
+
+            <p>To improve the quality of service delivery to the citizen and the quality of work environment of the
+                RTOs.</p>
+
+            <h6>Our Mission</h6>
+
+            <p>To automate all Vehicle Registration and Driving License related activities in transport authorities of
+                country with introduction of smart card technology to handle issues like inter state transport vehicle
+                movement and to create state and national level registers of vehicles/DL information</p>
+
+            <h6>Our Objectives</h6>
+
+            <p>To provide : </p>
+            <ul>
+                <li>Better services to Transport Department as well as citizen</li>
+                <li>Quick implementation of government policies from time to time</li>
+                <li>Improved image of Government & Department</li>
+                <li>Instant access of Vehicle/DL information to other government departments</li>
+
+            </ul>
+            <p>
+                The latest initiative has been to centralize both these applications for ensuring higher tranparency,
+                security and reliability of operations through a countrywide unified database and provision of a highly
+                citizen and trade centric web enabled environment. The new application being developed would provide for
+                a multi-user environment wherein the end customers (citizens) may be empowered to perform most of the
+                RTO related transactions (including payments) either from the comfort of home or from authorized third
+                party service provider/s in their vicinity. This will also help, to a large extent, in removing the
+                hassles and queues faced by citizens currently (in visiting RTOs for elementary types of
+                transactions),minimizing the extensive paperwork currently being done on the ground and reducing the
+                possibility of middlemen exploiting the uneducated / uninformed citizens. Going forward, mobile based
+                applications would be developed and systems utilizing the Aadhar Based identification would also be
+                integrated with the Unified RTO database for higher security and ease of operations.
+
+                <br>
+
+                With steady steps in direction of achievement of its Vision, Mission and objectives , the ministry is
+                progressing towards provision of improved service access to citizens with quality and efficiency in
+                service delivery, transparency in the system and reduced workload for RTO staff.
+            </p>
+        </div>
+
+        <!-- footer  -->
+        <div class="footer">
+            <footer>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">&copy; 2022 | RTO</a>
+            </footer>
+        </div>
+
+    </body>
+
+</html>

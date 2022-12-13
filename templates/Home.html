@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTO | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Home.css') }}">
+</head>
+<!-- Header -->
+
+<body>
+      <div class="As_img">
+        <img src="{{ url_for('static', filename='image/AshokSthambh.png') }}" alt="logo">
+    </div>
+    <header>
+        <p>GOVERNMENT OF MADHYA PRADESH</p>
+        <h2>MINISTRY OF ROAD TRANSPORT & HIGHWAYS</h2>
+    </header>
+
+
+    <!--Navigation bar-->
+
+    <div class="nav_bar">
+        <nav>
+            <ol>
+                <a href="{{ url_for('About_us') }}" target="_blank">About Us</a>
+                <a href="{{ url_for('Home') }}" target="_blank">Home</a>
+                <a href="{{ url_for('Licence') }}" target="_blank">Licence</a>
+                <a href="{{ url_for('vehicle_reg') }}" target="_blank">Vehicle</a>
+                <a href="{{ url_for('login')}}" target="_blank">Admin</a>
+                <a href="{{ url_for('Contect') }}"target="_blank">Contact Us</a>
+            </ol>
+        </nav>
+    </div>
+
+    <!--Floting Image section-->
+
+    <div class="image">
+        <img src="{{ url_for('static', filename='image/open.jpeg') }}" alt="">
+    </div>
+
+    <!-- Licence Section -->
+
+    <div class="center">
+
+        <!-- <div class="heading">
+            <h2>Licence Service</h2>
+            <p>Various services related to new/old driving licence or learner's licence like Appointment Booking,
+                Duplicate driving licence, Application Status, Online test for learner's licence, etc.</p>
+        </div> -->
+
+        <div class="section">
+            <div class="lerner_l1" id="div1">
+                <a href="{{ url_for('registration') }}">
+                <img src="{{ url_for('static', filename='image/Dl.png') }}" alt="image">
+                <br>
+                <h6>Drivers/ Learners License</h6>
+                <label id="lab1"></label>
+                <p>License registration on your fingertips</p></a>
+            </div>
+
+
+            <div class="lerner_l2" id="div2">
+                <a href="{{ url_for('registration') }}">
+                <img src="{{ url_for('static', filename='image/school-license.png') }}" alt="image">
+                <h6>Driving School</h6>
+                <p>One place for application of Driving School License</p></a>
+            </div>
+
+
+            <div class="lerner_l3" id="div3">
+                <a href="{{ url_for('vehicle_reg') }}">
+                <img src="{{ url_for('static', filename='image/vehicle-registration.png') }}" alt="image">
+                <h6>Vehicle Registration</h6>
+                <p>One click for all the vehicle related citizen services</p></a>
+
+                </p></a>
+            </div>
+
+
+            <div class="lerner_l4" id="div4">
+                <a href="{{ url_for('Licence') }}">
+                <img src="{{ url_for('static', filename='image/other services.png') }}" alt="image">
+                <h6>Other Services</h6>
+                <p>Explore the plethora of services related to Driving License</p></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Vahical Section -->
+
+    <div class="center">
+
+        <!-- <div class="heading">
+            <h2>Vahical Related Service</h2>
+            <p>Various services related to registration of vehicle/already registered vehicle like Appointment Booking,
+                Application Status, Duplicate Registration, Change of Address, Transfer of Ownership, Hypothecation,
+                etc.</p>
+        </div> -->
+
+        <div class="section">
+            <div class="lerner_l1" id="div1">
+                <a href="{{ url_for('CNG') }}">
+                <img src="{{ url_for('static', filename='image/cng-maker.png') }}" alt="image">
+                <br>
+                <h6>CNG Maker</h6>
+                <p>Make way for cleaner, greener fuel</p></a>
+            </div>
+
+
+            <div class="lerner_l2" id="div2">
+                <a href="{{ url_for('Homologation') }}">
+                <img src="{{ url_for('static', filename='image/Homologation.png') }}" alt="image">
+                <h6>Homologation</h6>
+                <p>Complete Life Cycle of a vehicle</p></a>
+            </div>
+
+
+            <div class="lerner_l3" id="div3">
+                <a href="{{ url_for('static', filename='a1988=59.pdf')}}">
+                <img src="{{ url_for('static', filename='image/act-policy.png') }}" alt="image">
+                <h6>Acts, Rule and Policies</h6>
+                <p>Motor Vehicle Rules and related Acts</p></a>
+            </div>
+
+
+            <div class="lerner_l4" id="div4">
+                <a href="{{ url_for('DLForm') }}">
+                <img src="{{ url_for('static', filename='image/news.png') }}" alt="image">
+                <h6>Daily News</h6>
+                <p>monthly news highlighting</p></a>
+            </div>
+        </div>
+    </div>
+
+      <!--Manufacturer Related Services -->
+
+    <div class="center">
+
+        <!-- <div class="heading">
+            <h2>Manufacturer Related Services</h2>
+            <p>A number of applications/services devoted to vehicle/kit manufacturers for ease of operations and business</p>
+        </div> -->
+
+        <div class="section">
+            <div class="lerner_l1" id="div1">
+                <a href="{{ url_for('static', filename='a1988-59.pdf')}}">
+                <img src="{{ url_for('static', filename='image/motor-vehicle-act.png') }}" alt="image">
+                <br>
+                <h6>Motor Vehicle Act, 1988</h6>
+                <p>All you need to know about the Motor Vehicle Act, 1988</p></a>
+            </div>
+
+
+            <div class="lerner_l2" id="div2">
+                <a href="{{ url_for('static', filename='cmvr-1989-annotated.pdf')}}">
+                <img src="{{ url_for('static', filename='image/center-motor-vehicle-rules.png') }}" alt="image">
+                <h6>Central Motor Vehicles Rules, 1989</h6>
+                <p>the Central Motor Vehicles Rules, 1989</p></a>
+            </div>
+
+
+            <div class="lerner_l3" id="div3">
+                <a href="{{ url_for('static', filename='FORM-20.pdf')}}">
+                <img src="{{ url_for('static', filename='image/images.jpg') }}" alt="image">
+                <h6>Vehicle Registration Form</h6>
+                <p>Download Vehicle Registration Form from Here</p></a>
+            </div>
+
+
+            <div class="lerner_l4" id="div4">
+                <a href="{{ url_for('static', filename='FORM-2.pdf')}}">
+                <img src="{{ url_for('static', filename='image/driver-license-form.jpg') }}" alt="image">
+                <h6>Driver License Form</h6>
+                <p>Download Driver License Form from Here</p></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer  -->
+    <div class="footer">
+        <footer>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">&copy; 2022 | RTO</a>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

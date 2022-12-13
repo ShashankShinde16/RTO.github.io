@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licence</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/licence_1.css') }}">
+</head>
+
+<body>
+    <!-- Header  -->
+
+    <div class="As_img">
+        <img src="{{ url_for('static', filename='image/AshokSthambh.png') }}" alt="logo">
+    </div>
+    <header>
+        <p>GOVERNMENT OF MADHYA PRADESH</p>
+        <h2>MINISTRY OF ROAD TRANSPORT & HIGHWAYS</h2>
+    </header>
+
+
+    <!--Navigation bar-->
+
+    <div class="nav_bar">
+        <nav>
+            <ol>
+                <a href="{{ url_for('About_us') }}" target="_blank">About Us</a>
+                <a href="{{ url_for('Home') }}" target="_blank">Home</a>
+                <a href="{{ url_for('Licence') }}" target="_blank">Licence</a>
+                <a href="{{ url_for('vehicle_reg') }}" target="_blank">Vehicle</a>
+                <a href="{{ url_for('login')}}" target="_blank">Admin</a>
+                <a href="{{ url_for('Contect') }}"target="_blank">Contact Us</a>
+            </ol>
+        </nav>
+    </div>
+    </div>
+    <div class="MPgov">
+        <h4>TRANSPORT DEPARTMENT, GOVERNMENT OF MADHYA PRADESH</h4>
+    </div>
+    <div class="center">
+       
+        <div class="section">
+            <div class="lerner_l1" id="div1">
+                <a href="{{ url_for('Ll') }}"><img src="{{ url_for('static', filename='image/license.png') }}" alt="image"></a>
+                <br>
+                <p>Apply for Learner Licence</p>
+            </div>
+
+
+            <div class="lerner_l1" id="div2">
+                <a href="{{ url_for('registration') }}"><img src="{{ url_for('static', filename='image/license.png') }}" alt="image"></a>
+                <p>Apply for Driving Licence</p>
+            </div>
+
+            <div class="lerner_l1" id="div3">
+                <a href="{{ url_for('dlr') }}"><img src="{{ url_for('static', filename='image/license.png') }}" alt="image"></a>
+                <p>Apply for DL Renewal</p>
+            </div>
+
+            <div class="lerner_l1" id="div4">
+                <a href="{{ url_for('Ddl') }}"><img src="{{ url_for('static', filename='image/license.png') }}" alt="image"></a>
+                <p>Apply for Duplicate DL</p>
+            </div>
+
+            <div class="lerner_l1" id="div5">
+                <a href="{{ url_for('registration') }}"><img src="{{ url_for('static', filename='image/license.png') }}" alt="image"></a>
+                <p>Tutorial for LL Test</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <!-- <div class="footer">
+        <footer>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">&copy; 2022 | RTO</a>
+        </footer>
+    </div> -->
+
+</body>
+
+</html>
